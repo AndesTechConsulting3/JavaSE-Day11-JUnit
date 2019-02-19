@@ -5,6 +5,9 @@ public class Account {
     private  static double MIN_BALANCE=10, MAX_BALANCE=1e6;
     private double balance;
 
+    public double getBalance(){return balance;}
+
+
     public Account(double balance) {
         this.balance = balance;
     }
