@@ -28,9 +28,24 @@ public class AccountTest {
         Assert.assertEquals(expected_balance,actual,1e-13);
 
 
+
+
+
     }
 
+    @Test
+    public void upperStringTest(){
 
+        // "sadasd".toUpperCase() "SADASD"
+
+       String data =  "sadasd";
+       String expected_data = "SADASD";
+
+       Assert.assertTrue(data.toUpperCase().equals(expected_data));
+
+
+
+    }
 
     @Test(expected = AccountException.class)
     public void negativeWithdrawlTest() throws AccountException {
