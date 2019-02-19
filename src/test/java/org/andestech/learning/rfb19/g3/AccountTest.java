@@ -10,7 +10,7 @@ public class AccountTest {
     private static Account account;
 
     @Before
-    public void initAccout(){
+    public void initAccount(){
         account = new Account(BALANCE);
 
     }
